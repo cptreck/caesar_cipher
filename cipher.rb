@@ -11,15 +11,20 @@
 
 # end
 
+# def loop_alpha (char, num)
+#     alpha = "abcdefghijklmnopqrstuvwxyz"
+
+#     alpha.each do |letter| 
+#         if letter == char.downcase
+#             new_index = letter.index + num 
+#             alpha[new_index]
+#         end
+#     end
+# end
+
 def loop_alpha (char, num)
     alpha = "abcdefghijklmnopqrstuvwxyz"
-
-    alpha.each do |letter| 
-        if letter == char.downcase do
-            new_index = letter.index + num 
-            return alpha[new_index]
-        end
-    end
+    alpha.index[char]
 end
 
-loop_alpha("a", 3)
+p loop_alpha("h", 3)
