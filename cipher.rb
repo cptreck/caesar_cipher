@@ -14,17 +14,18 @@
 # def loop_alpha (char, num)
 #     alpha = "abcdefghijklmnopqrstuvwxyz"
 
-#     alpha.each do |letter| 
+#     alpha.each_char do |letter| 
 #         if letter == char.downcase
-#             new_index = letter.index + num 
-#             alpha[new_index]
+#             new_index = alpha[letter.index] + num 
+#             alpha.index[new_index]
 #         end
 #     end
 # end
 
 def loop_alpha (char, num)
     alpha = "abcdefghijklmnopqrstuvwxyz"
-    alpha.index[char]
+    new_index = (alpha.index(char) + num) % 26
+    return alpha[new_index]
 end
 
-p loop_alpha("h", 3)
+p loop_alpha("s", 8)
