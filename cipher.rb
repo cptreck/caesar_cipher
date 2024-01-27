@@ -1,11 +1,3 @@
-#Implement a caesar cipher that takes in a string 
-#and the shift factor and then outputs the modified string
-
-# take string and number
-# seperate string into characters
-# find character in alphabet and apply number, 
-# if z start back at a
-
 $alpha = "abcdefghijklmnopqrstuvwxyz"
 
 def caesar_cipher (str, num)
@@ -30,5 +22,5 @@ def loop_alpha (char, num)
     $alpha[new_index]
 end
 
-p caesar_cipher("Let's a go!", 2)
-#p loop_alpha("s", 8)
+p caesar_cipher("Let's a go, Mr. Zebra!", 5)
+#Returns "Qjy'x f lt, Rw. Ejgwf!"
