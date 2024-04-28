@@ -22,5 +22,5 @@ def loop_alpha (char, num)
     $alpha[new_index]
 end
 
-p caesar_cipher("Let's a go, Mr. Zebra!", 5)
+p caesar_cipher("hello", 1)
 #Returns "Qjy'x f lt, Rw. Ejgwf!"
